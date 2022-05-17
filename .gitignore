@@ -6,8 +6,8 @@
 !README.md
 
 # exercises
-!.learn/
-!.learn/*
+.learn/
+.learn/*
 .learn/_app
 .learn/.session
 .learn/dist
