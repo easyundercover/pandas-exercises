@@ -45,7 +45,7 @@ import pandas as pd
 #df = pd.DataFrame.from_dict(data)
 #print(df)
 
-data_frame = pd.read_csv('.learn/assets/pokemon_data.csv') #5.2 dataframe iloc
+#data_frame = pd.read_csv('.learn/assets/pokemon_data.csv') #5.2 dataframe iloc
 #print(data_frame.iloc[133,6])
 
 #print(data_frame.head(3)) #05.3 file head
@@ -54,5 +54,18 @@ data_frame = pd.read_csv('.learn/assets/pokemon_data.csv') #5.2 dataframe iloc
 
 #print(data_frame[['Name','Type 1']][0:10]) #05.5 columns
 
+#print(data_frame.loc[data_frame['Attack'] > 80]) #05.6 loc function
 
+#print(len(data_frame.loc[data_frame['Legendary'] == True])) #05.7 filter and count
 
+df = pd.read_csv('.learn/assets/us_baby_names_right.csv') #06.1 clean datasets
+#print(df.head(5))
+
+#del df["Unnamed: 0"] #06.1 remove column
+#print(df.head(5))
+#df = df.iloc[: , 1:] #Esto también lo hace
+
+#print(df['Gender'].value_counts()) #06.2 value counts
+
+#result = df.groupby(['Name']).sum() #06.3 group by
+#print(len(result))
