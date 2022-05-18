@@ -67,5 +67,5 @@ df = pd.read_csv('.learn/assets/us_baby_names_right.csv') #06.1 clean datasets
 
 #print(df['Gender'].value_counts()) #06.2 value counts
 
-#result = df.groupby(['Name']).sum() #06.3 group by
-#print(len(result))
+result = df.groupby(['Name']).sum() #06.3 group by
+print(len(result))
